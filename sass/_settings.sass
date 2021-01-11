@@ -1,0 +1,31 @@
+*
+    box-sizing: border-box
+    &:focus
+        outline: none
+body
+    font-family: 'Mulish', sans-serif
+    color: $dark
+    background-color: $secondary
+.container
+    max-width: 1110px
+    width: 95%
+    margin: auto
+.img
+    max-width: 100%
+p
+    overflow-x: hidden
+button
+    white-space: nowrap
+    overflow-x: hidden !important
+    text-overflow: ellipsis
+@media (min-width: 992px)
+    button
+        transition: 0.4s
+        &:hover
+            box-shadow: 0 0 12px $primary
+            color: #ffffe0
+            cursor: pointer
+    a
+        transition: 0.4s
+        &:hover
+            color: #ffffbc

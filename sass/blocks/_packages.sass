@@ -1,0 +1,146 @@
+.packages
+    padding-bottom: 70px
+    overflow: hidden
+    &__variants-wrapper
+        margin-top: 65px
+    &__title
+        text-align: center
+        color: $dark
+        font-style: normal
+        font-weight: bold
+        font-size: 36px
+        line-height: 45px
+        text-transform: uppercase
+.variants-wrapper
+    display: grid
+    grid-template-columns: auto auto auto
+    grid-gap: 30px
+.variant
+    min-width: 350px
+    height: 500px
+    background-color: $dark
+    border-radius: 8px
+    overflow: hidden
+    font-family: 'Mulish'
+    position: relative
+    &:first-child
+        grid-column-start: 1
+        grid-column-end: 3
+        display: grid
+        grid-template-columns: 366px 300px
+        grid-column-gap: 43px
+    &__content-wrapper
+        max-width: 297px
+        margin-left: 32px
+        margin-top: 27px
+    &__big
+        &-image
+            height: 100%
+            width: 100%
+            object-fit: cover
+        &-content-wrapper
+            padding-top: 46px
+        &-title
+            margin-top: 5px
+            margin-bottom: 0
+    &__title
+        font-style: normal
+        font-weight: bold
+        font-size: 18px
+        line-height: 23px
+        color: #FFFFFF
+        margin-bottom: 23px
+        &_big
+            margin-bottom: 27px
+            margin-top: 5px
+    &__text
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 22px
+        max-height: 154px
+        overflow-y: auto
+        color: #FFFFFF
+        margin-bottom: 45px
+    &__icon-wrapper
+        display: flex
+        align-items: center
+        min-height: 15px
+        max-width: 202px
+        margin-bottom: 11px
+        &_big
+            margin-left: 3px
+    &__icon
+        width: 14px
+        height: 14px
+    &__description
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px
+        color: #FFFFFF
+        padding-left: 14px
+        &_long
+            padding-left: 2px
+    &__price
+        &-wrapper
+            display: flex
+            flex-direction: column
+            position: relative
+            margin-top: 24px
+            &_big
+                margin-top: 37px !important
+                margin-left: 2px
+
+        &-crossed
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 18px
+            text-decoration-line: line-through
+            color: #FFFFFF
+            margin-bottom: 5px
+        &-tag
+            font-style: normal
+            font-weight: bold
+            font-size: 24px
+            line-height: 30px
+            color: #FFFFFF
+    &__button
+        position: absolute
+        bottom: -6px
+        right: 1px
+        padding: 11px 27px 10px 26px
+        background-color: $primary
+        color: white
+        border: none
+        outline: none
+        border-radius: 4px
+        font-family: 'Nunito'
+        font-weight: 400
+        font-size: 14px
+        line-height: 19px
+        color: white
+        cursor: pointer
+        max-width: 119px
+    &__offer
+        position: absolute
+        left: 0
+        top: 26px
+        background-color: $primary
+        display: flex
+        justify-content: center
+        align-items: center
+        border-radius: 0px 4px 4px 0px
+        color: white
+        font-style: normal
+        font-weight: 600
+        font-size: 8px
+        line-height: 10px
+        padding: 4px 9px
+        &_big
+            padding: 8px 21px 7px 11px
+            font-style: normal
+            font-weight: 600
+            font-size: 12px
+            line-height: 15px

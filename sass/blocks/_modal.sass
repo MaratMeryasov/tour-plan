@@ -1,0 +1,105 @@
+.modal
+    &__overlay
+        position: fixed
+        left: 0
+        right: 0
+        top: 0
+        bottom: 0
+        background-color: rgba(0, 143, 223, 0.39)
+        z-index: 1000
+        visibility: hidden
+        opacity: 0
+        transition: 0.4s
+        &_active
+            visibility: visible
+            opacity: 1
+    &__title
+        font-style: normal
+        font-weight: 600
+        font-size: 18px
+        line-height: 23px
+        text-transform: uppercase
+        text-align: center
+        margin: 0
+        margin-bottom: 15px
+    &__dialog
+        position: fixed
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+        padding: 33px 88px
+        background-color: $dark
+        color: white
+        z-index: 1001
+        width: 478px
+        border-radius: 8px
+        visibility: hidden
+        opacity: 0
+        transition: 0.4s
+        &_active
+            visibility: visible
+            opacity: 1
+    &__form
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+    &__close
+        position: absolute
+        top: 17px
+        right: 17px
+    &__icon
+        fill: white
+        width: 16px
+        height: 16px
+    &__input
+        flex-basis: 302px
+        padding: 18px 0 17px 23px
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px
+        color: black
+        border-radius: 4px
+        &::placeholder
+            color: $gray
+        &:not(:first-child)
+            margin-top: 15px
+        &::label 
+            margin-top: 20px    
+    &__textarea
+        flex-basis: 302px
+        height: 123px
+        padding-top: 18px
+        padding-left: 23px
+        border-radius: 4px
+        resize: none
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px
+        color: #000
+        margin-top: 15px
+        margin-bottom: 15px
+        &::placeholder
+            color: $gray
+    &__button
+        font-style: normal
+        font-weight: 400
+        font-size: 12px
+        line-height: 15px
+        background-color: $primary
+        color: white
+        padding: 18px 65px 17px 66px
+        border: none
+        border-radius: 4px
+        cursor: pointer
+        max-width: 162px
+    &__info
+        align-self: center
+        font-style: normal
+        font-weight: bold
+        font-size: 12px
+        line-height: 15px
+        color: $gray
+.invalid
+    color: $primary
