@@ -30,7 +30,11 @@
             font-size: 16px
         &__item
             font-size: 12px
+    .navbar
+        position: relative
 @media (max-width: 992px)
+    .navbar__search
+        margin-left: 38px
     .navbar
         &__logo
             margin-right: auto
@@ -173,7 +177,18 @@
             width: 55%
         &__message
             max-width: 100%
+@media(max-width: 976px)
+    .navbar__search
+        margin-left: 38px
+    .footer
+        &__logo
+            height: 90%
+        &__input-wrapper
+            &:first-child
+                padding-right: 30px
 @media(max-width: 772px)
+    .navbar
+        position: fixed
     body
         padding-top: 90px
     .logo
@@ -211,8 +226,8 @@
             flex-direction: column
             &__item
                 margin-bottom: 20px
-            &--mobile
-                &_visible
+                &--mobile
+                  &_visible
                     display: block
         &__user
             flex-direction: column
@@ -233,6 +248,15 @@
                 color: $light
                 margin-left: 0
                 margin-top: 10px
+    .footer
+        &__input-wrapper
+          &:first-child
+            padding-right: 0px
+@media (max-width: 780px)
+    .footer
+        &__input-wrapper
+            &:first-child
+                padding-right: 30px
 @media (max-width: 768px)
     .logo
         &__image
@@ -321,6 +345,9 @@
             bottom: -77px
         &__pay
             bottom: -77px
+        &__input-wrapper
+            &:first-child
+                padding-right: 0px
     .modal
         &__dialog
             padding: 20px 50px
@@ -482,7 +509,7 @@
             left: 0
             right: 0
             bottom: 0
-            top: 90px
+            top: 70px
             &--visible
                 display: block
         &-menu
@@ -552,6 +579,7 @@
             &__text
                 width: 80%
                 max-height: 275px
+                margin: 33px
             &__button
                 top: 44px
                 &_prev
@@ -639,6 +667,8 @@
         &__title
             padding-left: 20px
     .footer
+        &__logo
+            height: auto
         &__categories,
         &__legal,
         &__contact-details
@@ -646,6 +676,13 @@
         &-wrapper
             padding-left: 20px
             padding-right: 20px
+@media(max-width: 498px)
+    .footer
+    &__logo
+        height: auto
+@media(max-width: 472px)
+    .navbar-top
+        padding-bottom
 @media (max-width: 480px)
     .navbar-top
         padding: 24px 0px 27px 0
@@ -715,6 +752,8 @@
     .footer
         padding-top: 67px
         padding-bottom: 98px
+        &__logo
+            height: auto
         &__social-network
             margin-top: 41px
         &__legal
