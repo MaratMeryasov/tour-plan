@@ -1,9 +1,44 @@
-@media(max-width: 1440px)
+@media (max-width: 3280px)
     .navbar
         position: relative
+    .swiper-container
+        margin-left: 0
+        margin-right: 30px
+    .hotel
+        padding-top: 10px
+@media (max-width: 1440px)
+    .rating
+        margin-top: 1px
+    .stars
+        margin-top: 5px
+    .hotel
+        &-description
+            margin-top: -1px
+        &-grid
+            margin-top: -11px
+    .booking
+        &-heading
+            margin-top: -2px
+            margin-left: -1px
+        &-num
+            margin-top: -5px
+    .newsletter
+        margin-bottom: -10px
+        &-title
+            margin-top: -1px
+        &-form
+            margin-top: -2px
+        &:before
+            margin-top: -1px
+    .reviews
+        padding: 0
+    &-text
+        justify-content: center
+    .activities
+        padding: 102px 98px 0
+    .footer
+        margin-top: 95px
 @media (max-width: 1200px)
-    .container
-        max-width: 960px
     .hotel
         &-slider
             width: 590px
@@ -12,16 +47,6 @@
     .card
         width: 230px
         height: 230px
-    .variant
-        min-width: 300px
-        &:first-child
-            grid-template-columns: 300px 300px
-            grid-column-gap: 18px
-        &__content-wrapper
-            margin-left: 20px
-            max-width: 267px
-    .variants-wrapper
-        grid-gap: 20px
     .footer
         &__input-wrapper
             width: 100%
@@ -60,7 +85,6 @@
     .hotel-slider
         width: 100%
         &__image
-            width: 100%
             object-fit: cover
     .booking, .map
         width: 340px
@@ -182,83 +206,12 @@
             width: 55%
         &__message
             max-width: 100%
-@media(max-width: 976px)
+@media (max-width: 976px)
     .navbar__search
         margin-left: 38px
     .footer
         &__logo
             height: 90%
-        &__input-wrapper
-            &:first-child
-                padding-right: 30px
-@media(max-width: 772px)
-    .navbar
-        position: fixed
-    body
-        padding-top: 90px
-    .logo
-        &__image
-            width: 70%
-    .navbar__search
-        margin-left: 0
-    .footer
-        &__input-wrapper
-            width: 100%
-    .navbar
-        &--mobile
-            &_fixed
-                position: fixed
-                left: 0
-                top: 0
-                right: 0
-                z-index: 99
-        &__user, &__search
-            &--mobile
-                &_hidden
-                    display: none
-                &_visible
-                    display: block
-        &-bottom
-            display: none
-            position: fixed
-            left: 0
-            right: 0
-            bottom: 0
-            top: 90px
-            &--visible
-                display: block
-        &-menu
-            flex-direction: column
-            &__item
-                margin-bottom: 20px
-                &--mobile
-                &_visible
-                    display: block
-        &__user
-            flex-direction: column
-            justify-content: center
-    .menu
-        &-button
-            display: flex
-            width: 16px
-            height: 11px
-            padding: 0
-            align-items: center
-            justify-content: space-between
-            flex-direction: column
-            border: none
-    .user
-        &__name
-            &--light
-                color: $light
-                margin-left: 0
-                margin-top: 10px
-    .footer
-        &__input-wrapper
-        &:first-child
-            padding-right: 0px
-@media (max-width: 780px)
-    .footer
         &__input-wrapper
             &:first-child
                 padding-right: 30px
@@ -271,71 +224,54 @@
         max-width: 700px
         &_sm
             max-width: 673px
-    body
-        padding-top: 90px
     .search
         &__input
             width: 340px
     .navbar
-        &--mobile
-            &_fixed
-                position: fixed
-                left: 0
-                top: 0
-                right: 0
-                z-index: 99
-        &__user, &__search
-            &--mobile
-                &_hidden
-                    display: none
-                &_visible
-                    display: flex
-        &__user
-            flex-direction: column
-            justify-content: center
-        &-bottom
-            display: none
-            position: fixed
-            left: 0
-            right: 0
-            bottom: 0
-            top: 90px
-            padding-top: 38px
-            &--visible
-                display: block
+        &-top
+            padding-top: 30px
+            padding-bottom: 30px
         &-menu
-            flex-direction: column
+            padding-top: 22px
+            padding-bottom: 22px
+            &__link
+                font-size: 12px
             &__item
-                margin-bottom: 20px
-                &--mobile
-                    &_visible
-                        display: block
-    .menu
-        &-button
-            display: flex
-            width: 16px
-            height: 11px
-            padding: 0
-            align-items: center
-            justify-content: space-between
-            flex-direction: column
-            border: none
-    .user
-        &__name
-            &--light
-                color: $light
-                margin-left: 0
-                margin-top: 10px
+                margin-top: -1px
+
+    .navbar__search
+        margin-left: 8px
     .newsletter
+        &::before
+            bottom: 50px
         &-wrapper
             max-width: 700px
+        &-title
+            font-size: 24px
+            margin-top: 17px
+            margin-right: 34px
+        .subscribe
+            width: 350px
+    .reviews
+        padding-top: 23px
+        padding-bottom: 46px
+    .activites
+        &-wrapper
+            margin-top: 57px
     .footer
         padding-bottom: 110px
+        margin-top: 0
+        &__input-wrapper
+            &:first-child
+                padding-right: 30px
+        &__logo
+            height: 70%
+            width: 70%
         &__social-network
             margin-top: 51px
             transform: translate(6px, 0)
         &__categories, &__aditional, &__legal
-            margin-top: 49px
+            margin-top: -14px
         &__aditional
             margin-left: 11px
         &__legal-title, &__legal-ul
@@ -350,24 +286,11 @@
             bottom: -77px
         &__pay
             bottom: -77px
+@media (max-width: 767px)
+    .footer
         &__input-wrapper
             &:first-child
-                padding-right: 0px
-    .modal
-        &__dialog
-            padding: 20px 50px
-            width: 75%
-        &__message
-            width: 100%
-            flex-basis: 100%
-        &__contact-form
-            padding: 0
-        &__button
-            order: 1
-            width: 100%
-            margin-top: 0
-        &__tip
-            margin-bottom: 10px
+                padding-right: 30px
 @media (max-width: 740px)
     .navbar
         &--mobile
@@ -447,7 +370,7 @@
             grid-row: 5
         &__input-wrapper
             width: 100%
-@media(max-width: 704px)
+@media (max-width: 704px)
     .navbar
         &--mobile
             &_fixed
@@ -681,11 +604,11 @@
         &-wrapper
             padding-left: 20px
             padding-right: 20px
-@media(max-width: 498px)
+@media (max-width: 498px)
     .footer
     &__logo
         height: auto
-@media(max-width: 472px)
+@media (max-width: 472px)
     .navbar-top
         padding-bottom
 @media (max-width: 480px)
@@ -819,6 +742,8 @@
         &__input
             padding-left: 19px
 @media (max-width: 370px)
+    .navbar 
+        position: fixed
     .container
         max-width: 280px
     .variant
@@ -885,6 +810,8 @@
     .modal
         &__dialog
             width: 90%
+@media (max-width: 320px)
+width: 280px
 @media (max-width: 700px) and (orientation:landscape)
     .navbar
         &-menu
