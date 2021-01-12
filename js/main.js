@@ -57,6 +57,7 @@ document.addEventListener('keydown', keyPress);
 
 menuButton.addEventListener('click', function(){
   document.querySelector('.navbar-bottom').classList.toggle('navbar-bottom--visible');
+  $("body").toggleClass("hidden")
 });
 $('.form').each(function(){
   $(this).validate({
