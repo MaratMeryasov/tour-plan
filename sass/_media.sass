@@ -28,8 +28,6 @@
             margin-top: -1px
         &-form
             margin-top: -2px
-        &:before
-            margin-top: -1px
     .reviews
         padding: 0
     &-text
@@ -238,10 +236,11 @@
                 font-size: 12px
             &__item
                 margin-top: -1px
-
     .navbar__search
         margin-left: 8px
     .newsletter
+        .subscribe
+            width: 350px
         &::before
             bottom: 50px
         &-wrapper
@@ -250,11 +249,19 @@
             font-size: 24px
             margin-top: 17px
             margin-right: 34px
-        .subscribe
-            width: 350px
+
     .reviews
         padding-top: 23px
         padding-bottom: 46px
+    &-slider
+        &__item
+          padding: 0 30px 30px
+          &::after, &::before
+             display: none
+        &__button
+            top: 45px
+            left: 50%
+
     .activites
         &-wrapper
             margin-top: 57px
@@ -262,16 +269,16 @@
         padding-bottom: 110px
         margin-top: 0
         &__input-wrapper
+            width: 255px
             &:first-child
-                padding-right: 30px
+                padding-right: 0px
         &__logo
-            height: 70%
-            width: 70%
+            height: 90%
         &__social-network
             margin-top: 51px
             transform: translate(6px, 0)
         &__categories, &__aditional, &__legal
-            margin-top: -14px
+            margin-top: 53px
         &__aditional
             margin-left: 11px
         &__legal-title, &__legal-ul
@@ -371,7 +378,30 @@
         &__input-wrapper
             width: 100%
 @media (max-width: 704px)
+    body
+        padding-top: 0px
+    .navbar-menu
+        flex-direction: column
+        &__item
+            display: block
+        &__item
+            &:not(:last-child)
+                margin-bottom: 18px
+                &:nth-child(6)
+                    margin-bottom: 16px
     .navbar
+        position: fixed
+    .hotel
+        &-info
+            margin-top: 30px
+    .navbar-top
+        padding-top: 40px
+    .user__name
+        color: #fff
+    .navbar
+        &-top
+            &__menu-button
+                display: block
         &--mobile
             &_fixed
                 position: fixed
@@ -406,18 +436,37 @@
         &__categories,
         &__legal,
         &__contact-details,
-        &__contact-form
+        &__contact-form,
             margin-left: 20px
         &__logo
             padding-left: 20px
         &__input-wrapper
             width: 100%
+    .newsletter
+        padding: 100px
 @media (max-width: 700px)
+    .hotel
+        &-info
+            margin-top: 49px
+    .navbar-top
+        padding-top: 30px
+    .navbar-menu
+        flex-direction: column
+        &__item
+            display: block
+    .navbar
+        position: fixed
+    .navbar
+        &-top
+            &__menu-button
+                display: block
     .container
         max-width: 576px
     body
-        padding-top: 98px
+        padding-top: 0px
     .navbar
+        &-menu__button
+            display: block
         &--mobile
             &_fixed
                 position: fixed
@@ -427,10 +476,10 @@
                 z-index: 99
         &__user, &__search
             &--mobile
-                &_hidden
-                    display: none
-                &_visible
-                    display: block
+            &_hidden
+                display: none
+            &_visible
+                display: block
         &-bottom
             display: none
             position: fixed
@@ -523,6 +572,8 @@
             width: 85%
             padding: 20px 15px
 @media (max-width: 576px)
+    body
+        padding-top: 0px
     .reviews__title
         font-size: 18px
         line-height: 23px
@@ -531,10 +582,16 @@
         margin-top: 40px
         margin-bottom: 42px
     .footer
+        &__aditional,
+        &__social-network,
+        &__categories,
+        &__legal,
+        &__contact-details,
+        &__contact-form,
+            margin-left: 20px
         &-wrapper
             grid-template-columns: 100%
             grid-column-gap: 0
-
         &__social-network
             grid-row: 2
             display: flex
@@ -597,7 +654,9 @@
     .footer
         &__logo
             height: auto
+            padding-left: 0
         &__categories,
+        &__social-network,
         &__legal,
         &__contact-details
             margin-left: 0px
@@ -605,19 +664,18 @@
             padding-left: 20px
             padding-right: 20px
 @media (max-width: 498px)
+    body
+        padding-top: 0
     .footer
     &__logo
         height: auto
-@media (max-width: 472px)
-    .navbar-top
-        padding-bottom
 @media (max-width: 480px)
+    body
+        padding-top: 0
     .navbar-top
         padding: 24px 0px 27px 0
     .breadcrumb-list
         padding: 12px 0 18px
-    .container
-        width: 88%
     .logo
         &__image
             width: 99px
@@ -708,6 +766,7 @@
             transform: translate(0px, -3px)
         &__contact-form
             margin-top: 12px
+            margin-left: 0
         &__feedback-title
             margin-bottom: 15px
         &__info
@@ -742,10 +801,8 @@
         &__input
             padding-left: 19px
 @media (max-width: 370px)
-    .navbar 
+    .navbar
         position: fixed
-    .container
-        max-width: 280px
     .variant
         min-width: 280px
         &:first-child
@@ -760,8 +817,6 @@
             margin-left: 16px
     .newsletter
         padding: 60px 0 83px 0
-        &-wrapper
-            width: 280px
         &-title
             &__strong
                 line-height: 48px
@@ -811,7 +866,86 @@
         &__dialog
             width: 90%
 @media (max-width: 320px)
-width: 280px
+    .newsletter
+        .subscribe
+            width: 280px
+            margin: auto
+        &::before
+            margin-top: -1px
+    .subscribe__button
+        font-size: 12px
+    .breadcrumb
+        padding-top: 77px
+        padding-left: 9px
+    .hotel-info
+        margin-top: 5px
+        margin-right: 30px
+    .hotel-grid
+        margin-top: 13px
+    .stars
+        margin-top: 0
+        margin-right: 65px
+    .hotel
+        margin-right: 10px
+        &-wrapper
+            width: 320px
+    .hotel-info
+        width: 320px
+        height: 115px
+    .reviews
+        &__container
+            width: 281px
+        &-slider
+            &__text
+                text-align: center
+                padding-top: 23px
+                padding-bottom: 0px
+    .activities
+        padding: 0
+        &__title
+            margin-left: 20px
+            margin-bottom: 1px
+        &-wrapper
+            margin-top: 32px
+    .footer
+        &__social-network
+            margin-top: 14px
+        &__text
+            margin-bottom: 20px
+        &__contact
+            &-item
+                margin-top: -4px
+                margin-left: 1px
+        &__contact-form
+            margin-top: 16px
+        &__input-wrapper
+        &:first-child
+            padding-right: 0
+    .reviews
+        padding-top: 25px
+        padding-left: 11px
+        &__title
+            text-align: center
+            width: 245px
+            margin-top: 24px
+            margin-left: 23px
+        &-slider
+            .reviews
+        &__container
+            width: 281px
+            position: absolute
+        &__title
+            padding: 0px 10px
+        &-slider
+            &__text
+                max-width: 219px
+                &__text 
+                    max-height: 266px
+                    overfloy-y: avto
+    .swiper
+        margin-right: 94px
+    
+
 @media (max-width: 700px) and (orientation:landscape)
     .navbar
         &-menu
