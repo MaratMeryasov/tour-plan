@@ -5640,6 +5640,9 @@ template {
 }
 
 @media (max-width: 1440px) {
+  .navbar {
+    position: relative;
+  }
   .rating {
     margin-top: 1px;
   }
